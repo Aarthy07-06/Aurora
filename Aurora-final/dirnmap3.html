@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get direction</title>
+  <!-- <link rel="stylesheet" href="./table_style.css"> -->
+   <style>
+    *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      margin:100px;
+      background-color: #e8ddfd;
+      /* font-size: 15px; */
+    }
+    h1{
+      text-align:center;
+    }
+    form{
+      text-align:center;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      width: 50%;
+      font-size: 20px;
+      padding: 12px 20px 12px 40px;
+      border: 2px solid #ffffff;
+      margin-bottom: 12px;
+      margin:45px 25%;
+    }
+    .gd{
+      padding: 4px;
+      background-color: #e8ddfd;
+      border-radius: 5px;
+    }
+    .text{
+      padding: 4px;
+    }
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #322e36;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #e2dede;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+    </style> 
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="dirnmap3.html">Get direction</a>
+    <a href="stateboard.html">Matric</a>
+    <a href="scltable.html">CBSE</a>
+    <a href="ICSE.html">ICSE</a>
+    <a href="preschool.html">Preschool</a>
+    <a href="neetjee.html">NEET/JEE</a>
+    <a href="colleges.html">Colleges</a>
+    <a href="harmonyhub.html">Harmony hub</a>
+    <a href="dancehub.html">Dance hub</a>
+    <a href="logout.php">Logout</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+
+  </script>
+
+   <h1>Get direction</h1>
+   <form action="http://maps.google.com/maps" method="get" target="_blank">
+    Enter your starting address:
+    <input type="text" name="saddr" class="text"/>
+    
+    <input type="submit" value="Get directions" class="gd"/>
+    </form>
+</body>
+</html>

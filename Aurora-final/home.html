@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME PAGE</title>
+  <!-- Font Awesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+  <center>
+    <h1>AURORA</h1>
+  </center>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="dirnmap3.html">Get direction</a>
+    <a href="stateboard.html">Matric</a>
+    <a href="scltable.html">CBSE</a>
+    <a href="ICSE.html">ICSE</a>
+    <a href="preschool.html">Preschool</a>
+    <a href="neetjee.html">NEET/JEE</a>
+    <a href="colleges.html">Colleges</a>
+    <a href="harmonyhub.html">Harmony hub</a>
+    <a href="dancehub.html">Dance hub</a>
+    <a href="logout.php">Logout</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <form role="search" id="form" action="https://www.google.com/search" method="get" target="_blank">
+    <input id="query" type="search" name="q" placeholder="Google Search..." autofocus size="50"
+      aria-label="Search through site content">
+    <input type="submit" value="Search" class="search">
+  </form>
+
+  <section>
+    <div class="row">
+      <h2 class="section-heading">Our Services</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i style='font-size:24px' class='fas'>&#xf77c;</i>
+          </div>
+          <h3>PRESCHOOLS </h3>
+          <a href="preschool.html">
+            <center> <button class="block"><b>Click here</b></button></center>
+          </a>
+          <p>
+            Find the Perfect Preschool:One click to all the best choices for your Child's future!
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i style='font-size:24px' class='fas'>&#xf549;</i>
+
+          </div>
+          <h3>SCHOOLS</h3>
+          <a href="scltable.html">
+            <center> <button class="block"><b>Click here</b></button></center>
+          </a>
+          <p>
+            Discover the Ideal school:One click to connect with top schools for your child's success!
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i style='font-size:24px' class='fas'>&#xf501;</i>
+
+          </div>
+          <h3>COLLEGES</h3>
+          <a href="colleges.html">
+            <center> <button class="block"><b>Click here</b></button></center>
+          </a>
+          <p>
+            Explore your future :one click to connect with leading colleges for your Academic and career goals!
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i style='font-size:24px' class='fas'>&#xf51c;</i>
+
+          </div>
+          <h3>NEET/JEE COACHING</h3>
+          <a href="neetjee.html">
+            <center> <button class="block"><b>Click here</b></button></center>
+          </a>
+          <p>
+            Achieve Your Dreams:one click to find the best NEET and JEE coaching centers for ultimate success!
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i style='font-size:24px' class='fas'>&#xf001;</i>
+          </div>
+          <h3>HARMONY HUB</h3>
+          <a href="harmonyhub.html">
+            <center> <button class="block"><b>Click here</b></button></center>
+          </a>
+          <p>
+            Unleash Your Talent:one click to discover premier music and instrument class near you!
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="icon-wrapper">
+            <i style='font-size:24px' class='fas'>&#xf1ae;</i>
+
+          </div>
+          <h3>DANCE HUB</h3>
+          <a href="dancehub.html">
+            <center> <button class="block"><b>Click here</b></button></center>
+          </a>
+          <p>
+            Step into the rhythm:one click explore exciting dance classes for every beat!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+</body>
+
+</html>
+

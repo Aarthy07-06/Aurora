@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Institutions List</title>
+    <link rel="stylesheet" href="./table_style.css">
+    
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="dirnmap3.html">Get direction</a>
+    <a href="stateboard.html">Matric</a>
+    <a href="scltable.html">CBSE</a>
+    <a href="ICSE.html">ICSE</a>
+    <a href="preschool.html">Preschool</a>
+    <a href="neetjee.html">NEET/JEE</a>
+    <a href="colleges.html">Colleges</a>
+    <a href="harmonyhub.html">Harmony hub</a>
+    <a href="dancehub.html">Dance hub</a>
+    <a href="logout.php">Logout</a>
+  </div>
+      
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      
+      
+      </script>
+  <h1>LIST OF ICSE SCHOOLS IN CHENNAI</h1>       
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Type in a name">
+
+    
+<table id="myTable">
+ <tr>
+    <td><a href="https://www.cpsglobalschool.com/" target="_blank">CPS Global School</a></td>
+    <td>Radial Nagar, Anna Nagar West Extention, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.npsinternationalchennai.com/" target="_blank">NPS International School</a></td>
+    <td>Embassy Residency Rd, Cheran Nagar, Perumbakkam, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://tipschennai.com/" target="_blank">The Indian Public School</a></td>
+    <td>First Main Road, Perungudi Industrial Estate, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://hus.edu.in/" target="_blank">Hiranandani Upscale School</a></td>
+    <td>Old Mahabalipuram Road, Egattur Village, Padur, Kelambakkam, Via Kanchipuram Dist, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.alphabet.school/" target="_blank">Alphabet International School</a></td>
+    <td>Alwarpet, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://velammal.org/velammal-global-school-puzhal/" target="_blank">Velammal Global School</a></td>
+    <td>Ambattur Red Hills Rd, Puzhai, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.gatewayschools.edu.in/" target="_blank">Gateway International School</a></td>
+    <td>Padur Kazhipattur Post, OMR, Kelambakkam, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.omegaschools.org/" target="_blank">Lalaji Memorial Omega International School</a></td>
+    <td>Periyar Street, Kolapakkam, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.aischennai.org/" target="_blank">American International School</a></td>
+    <td>Tharamani 100ft Road, Ibms, Tharamani, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.akshararbol.edu.in/" target="_blank">Akshar Arbol International School</a></td>
+    <td>Umapathy Street, West Mambalam, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://mctminternational.com/" target="_blank">M.CT.M Chidambaram Chettyar International School</a></td>
+    <td>179, Luz Church Road, Mylapore, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.kchigh.com/admissions/registration/" target="_blank">KC High International School</a></td>
+    <td>Navalur, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://g.co/kgs/wKYeKWd" target="_blank">ANE International School</a></td>
+    <td>Basheer Ahmed Rd, Teynampet, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://suranahightech.com/" target="_blank">Surana High Tech International School</a></td>
+    <td>RBI Quarters, Besant Nagar, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://shivnadarschool.edu.in/chennai" target="_blank">Shiv Nadar School</a></td>
+    <td>Besant Ave Rd, Karpagam Gardens, Adyar, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://kenrich.in/" target="_blank">Kenrich International School</a></td>
+    <td>Tirumurthy Nagar, Nungambakkam, Chennai</td>
+  </tr>
+  <tr>
+    <td><a href="https://thenest.school/" target="_blank">The NEST School</a></td>
+    <td>Arcot Rd, NSK Salai, Kodampakkam, Chennai</td>
+  </tr>
+
+
+</table>
+  <script>
+    function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+    }
+    }
+ </script>
+
+</body>
+</html>
+  
